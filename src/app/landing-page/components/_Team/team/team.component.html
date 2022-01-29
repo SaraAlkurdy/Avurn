@@ -1,0 +1,47 @@
+<div id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="team-header">
+                    <h6>Meet Our Expert</h6>
+                    <h2>Our Creative <span>Team</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="team-slider">
+            <div id="teamSlider" class="owl-carousel owl-theme">
+                <div class="item" *ngFor="let item of teamImages">
+                    <img [src]="item.image">
+                    <div class="team-info">
+                        <h3>{{item.name}}</h3>
+                        <span>{{item.position}}</span>
+                        <div class="social-media mt-2">
+                            <ul>
+                                <li>
+                                    <a><i class="fa fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a><i class="fa fa-pinterest-p"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <app-our-story></app-our-story>
+</div>

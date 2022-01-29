@@ -1,0 +1,83 @@
+#number-speaks {
+    padding: 65px 0 0;
+
+    .number-speaks-header {
+        h6 {
+            color: var(--pink-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-weight: 400;
+            width: 80%;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                font-weight: bold;
+                text-transform: lowercase;
+            }
+        }
+        p {
+            color: #828893;
+            font-size: 15px;
+            width: 80%;
+        }
+        button {
+            background: var(--pink-color);
+            color: var(--white-color);
+            border: none;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            font-weight: 500;
+            &:hover {
+                background: var(--black-color);
+                transition: 0.5s;
+            }
+        }
+    }
+    .number-speaks-content {
+        .media {
+            margin-bottom: 15px;
+            span {
+                visibility: visible;
+                font-size: 45px;
+                font-weight: 700;
+                color: var(--pink-color);
+                width: 20%;
+            }
+            h4 {
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p {
+                color: #828893;
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .number-speaks-header {
+            button {
+                margin-bottom: 1.5rem;
+            }
+        }
+        .number-speaks-content {
+            .media {
+                span {
+                    font-size: 30px;
+                    width: 15%;
+                    align-self: start !important;
+                }
+                h4 {
+                    font-size: 19px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

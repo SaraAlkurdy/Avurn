@@ -1,0 +1,164 @@
+#portfolio {
+    padding: 65px 0;
+    background-image: url(../../../../../assets/images/overlay.6d4af2f6edb4639f.png);
+    background-size: cover;
+    background-position: center;
+    .portfolio-header {
+        text-align: center;
+        h6 {
+            color: var(--pink-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-weight: 400;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                font-weight: bold;
+            }
+        }
+        p {
+            color: #828893;
+            font-size: 17px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .portfolio-content {
+        .portfolio-img {
+            cursor: pointer;
+            &:hover {
+                overflow: hidden;
+                img {
+                    transform: scale(1.2);
+                    transition: transform 0.5s linear;
+                }
+                .img-overlay {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            position: relative;
+            overflow: hidden;
+            .img {
+                overflow: hidden;
+                margin-bottom: 25px;
+                img {
+                    width: 100%;
+                    transition: transform 0.5s linear;
+                }
+            }
+            .img-overlay {
+                background: var(--pink-color);
+                position: absolute;
+                top: 0;
+                bottom: 25px;
+                margin: 10px 10px;
+                right: 0;
+                color: var(--white-color);
+                left: 0;
+                text-align: right;
+                padding: 20px;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s linear;
+            }
+        }
+
+        ::ng-deep {
+            .mat-tab-header {
+                margin: 30px 0;
+                border-bottom: none;
+            }
+            .mat-tab-body {
+                .mat-tab-body-content {
+                    overflow: hidden;
+                }
+            }
+            .mat-tab-label-active {
+                .mat-tab-label-content {
+                    color: var(--pink-color);
+                }
+                &::before {
+                    content: "\\";
+                    color: var(--black-color);
+                    position: relative;
+                    font-weight: 900;
+                    font-size: 21px;
+                    transform: rotate(150deg);
+                    left: 6px;
+                    top: 1px;
+                }
+            }
+            .mat-tab-label {
+                opacity: 1 !important;
+                min-width: 80px !important;
+                &:hover::before {
+                    content: "\\";
+                    color: var(--black-color);
+                    position: relative;
+                    font-weight: 900;
+                    font-size: 21px;
+                    transform: rotate(150deg);
+                    left: 6px;
+                    top: 1px;
+                }
+            }
+            .mat-tab-label-content {
+                color: #565555;
+                font-weight: 600;
+                font-size: 15px;
+                &::after {
+                    font-family: FontAwesome;
+                    content: "\f0c8";
+                    color: #bbb;
+                    position: absolute;
+                    transform: rotate(45deg);
+                    font-size: 10px;
+                    right: 4px;
+                }
+            }
+            .mat-tab-labels {
+                .mat-tab-label:last-child {
+                    .mat-tab-label-content {
+                        &::after {
+                            content: none;
+                        }
+                    }
+                }
+            }
+            .mat-tab-group.mat-primary .mat-ink-bar,
+            .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .portfolio-header {
+            p {
+                font-size: 15px;
+                width: 100%;
+            }
+        }
+        .portfolio-content {
+            ::ng-deep {
+                .mat-tab-label {
+                    min-width: 50px !important;
+                    padding: 0 20px;
+                }
+                .mat-tab-label-content {
+                    font-size: 13px;
+                    &::after {
+                        font-size: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+#who-we-are {
+    background: #f6f4f7;
+    padding: 65px 0;
+    margin-top: 65px;
+    .who-text {
+        text-align: left;
+        h6 {
+            color: var(--pink-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-weight: 400;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                font-weight: bold;
+            }
+        }
+        p {
+            color: #828893;
+        }
+        button {
+            background: var(--pink-color);
+            color: var(--white-color);
+            border: none;
+            text-transform: capitalize;
+            padding: 10px 20px;
+            font-weight: 600;
+            &:hover {
+                background: var(--black-color);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .who-content {
+        p {
+            color: #828893;
+            text-align: left;
+        }
+        ul {
+            list-style: none;
+            text-align: left;
+            padding: 0;
+            li {
+                position: relative;
+                display: inline-block;
+                width: 50%;
+                margin-bottom: 10px;
+                span {
+                    margin-left: 20px;
+                    color: #828893;
+                    font-weight: 500;
+                }
+                &::before {
+                    font-family: FontAwesome;
+                    content: "\f0c8";
+                    color: var(--pink-color);
+                    position: absolute;
+                    transform: rotate(45deg);
+                    font-size: 10px;
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .who-text {
+            button {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

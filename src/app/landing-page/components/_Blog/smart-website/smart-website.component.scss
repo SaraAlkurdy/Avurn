@@ -1,0 +1,54 @@
+#smart-website {
+    margin: 65px 0 0;
+    background-image: url(../../../../../assets/images/cta-bg.74ceb11dd1ada8dd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .smart-website-bg {
+        background: rgba(54, 169, 225, 0.8);
+        padding: 70px 0;
+    }
+
+    .smart-website-text {
+        h3 {
+            color: var(--white-color);
+            text-transform: capitalize;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--black-color) 10%);
+            }
+        }
+        p {
+            color: var(--white-color);
+            font-weight: 600;
+        }
+    }
+
+    .smart-website-btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        button {
+            background: var(--white-color);
+            text-transform: capitalize;
+            font-weight: 500;
+            padding: 15px 30px;
+            &:hover {
+                background: var(--black-color);
+                color: var(--white-color);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .smart-website-text {
+            text-align: center;
+        }
+        .smart-website-btn {
+            button {
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+#testimonial {
+    background: #f6f4f7;
+    padding: 65px 0;
+    .testimonial-header {
+        text-align: center;
+        margin-bottom: 50px;
+        h6 {
+            color: var(--pink-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-weight: 400;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                font-weight: bold;
+            }
+        }
+        p {
+            color: #828893;
+            font-size: 17px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .testimonial-slider {
+        padding-bottom: 65px;
+        .media {
+            background: var(--white-color);
+            padding: 30px;
+            border-right: 3px solid var(--black-color);
+            border-left: 3px solid var(--black-color);
+            .testimonial-img {
+                width: 80px;
+                height: 80px;
+                display: inline-table;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+
+            .media-body {
+                padding-left: 20px;
+                p {
+                    color: #828893;
+                }
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: var(--black-color);
+                }
+                span {
+                    font-size: 15px;
+                    color: var(--pink-color);
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    ::ng-deep {
+        .owl-dots {
+            margin-top: 25px;
+        }
+        .owl-theme .owl-dots .owl-dot.active span,
+        .owl-theme .owl-dots .owl-dot:hover span {
+            background: var(--pink-color);
+        }
+
+        .owl-theme .owl-dots .owl-dot span {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .testimonial-header {
+            p {
+                width: 100%;
+                font-size: 15px;
+            }
+        }
+    }
+}

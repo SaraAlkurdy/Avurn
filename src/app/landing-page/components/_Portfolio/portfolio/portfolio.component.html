@@ -1,0 +1,126 @@
+<div id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="portfolio-header">
+          <h6>Our Latest Work</h6>
+          <h2>Our <span>Portfolio</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="portfolio-content">
+          <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="All">
+              <div class="row" *ngFor="let item of imageData; let i = index">
+                <ng-container *ngIf="item.label == 'All'">
+                  <div class="col-sm-12 col-md-4" *ngFor="let images of item.images; let j = index">
+                    <div class="portfolio-img gallerize-example" (click)="openLightBox(j, item.label)">
+                      <div class="img">
+                        <img [src]="images.img" [lightbox]="j" [gallery]="'lightbox'">
+                      </div>
+                      <div class="img-overlay">
+                        <h4>{{images.title}}</h4>
+                        <span>{{images.position}}</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </ng-container>
+
+              </div>
+            </mat-tab>
+            <mat-tab label="Design">
+              <div class="row" *ngFor="let item of imageData; let i = index">
+                <ng-container *ngIf="item.label == 'Design'">
+                  <div class="col-sm-12 col-md-4" *ngFor="let images of item.images; let j = index">
+                    <div class="portfolio-img gallerize-example" (click)="openLightBox(j, item.label)">
+                      <div class="img">
+                        <img [src]="images.img" [lightbox]="j" [gallery]="'lightbox'">
+                      </div>
+                      <div class="img-overlay">
+                        <h4>{{images.title}}</h4>
+                        <span>{{images.position}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+
+              </div>
+            </mat-tab>
+            <mat-tab label="SEO">
+              <div class="row" *ngFor="let item of imageData; let i = index">
+                <ng-container *ngIf="item.label == 'SEO'">
+                  <div class="col-sm-12 col-md-4" *ngFor="let images of item.images; let j = index">
+                    <div class="portfolio-img gallerize-example" (click)="openLightBox(j, item.label)">
+                      <div class="img">
+                        <img [src]="images.img" [lightbox]="j" [gallery]="'lightbox'">
+                      </div>
+                      <div class="img-overlay">
+                        <h4>{{images.title}}</h4>
+                        <span>{{images.position}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+              </div>
+            </mat-tab>
+            <mat-tab label="Branding">
+              <div class="row" *ngFor="let item of imageData; let i = index">
+                <ng-container *ngIf="item.label == 'Branding'">
+                  <div class="col-sm-12 col-md-4" *ngFor="let images of item.images; let j = index">
+                    <div class="portfolio-img gallerize-example" (click)="openLightBox(j, item.label)">
+                      <div class="img" [lightbox]="j" [gallery]="'lightbox'">
+                        <img [src]="images.img">
+                      </div>
+                      <div class="img-overlay">
+                        <h4>{{images.title}}</h4>
+                        <span>{{images.position}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+              </div>
+            </mat-tab>
+            <mat-tab label="Print">
+              <div class="row" *ngFor="let item of imageData; let i = index">
+                <ng-container *ngIf="item.label == 'Print'">
+                  <div class="col-sm-12 col-md-4" *ngFor="let images of item.images; let j = index">
+                    <div class="portfolio-img gallerize-example" (click)="openLightBox(j, item.label)">
+                      <div class="img" [lightbox]="j" [gallery]="'lightbox'">
+                        <img [src]="images.img">
+                      </div>
+                      <div class="img-overlay">
+                        <h4>{{images.title}}</h4>
+                        <span>{{images.position}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+
+              </div>
+            </mat-tab>
+            <mat-tab label="Video">
+              <div class="row" *ngFor="let item of imageData; let i = index">
+                <ng-container *ngIf="item.label == 'Video'">
+                  <div class="col-sm-12 col-md-4" *ngFor="let images of item.images; let j = index">
+                    <div class="portfolio-img gallerize-example" (click)="openLightBox(j, item.label)">
+                      <div class="img" [lightbox]="j" [gallery]="'lightbox'">
+                        <img [src]="images.img">
+                      </div>
+                      <div class="img-overlay">
+                        <h4>{{images.title}}</h4>
+                        <span>{{images.position}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </ng-container>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-creative-solutions></app-creative-solutions>
+  <app-number-speaks></app-number-speaks>
+</div>

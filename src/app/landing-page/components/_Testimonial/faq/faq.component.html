@@ -1,0 +1,60 @@
+<div id="faq">
+  <div class="container">
+    <div class="faq-header">
+      <h6>faq</h6>
+      <h2>Frequently Asked <span>Question</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
+    <div class="faq-content">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <!-- <div class="faq-accordion">
+            <cdk-accordion class="example-accordion">
+              <cdk-accordion-item *ngFor="let item of items; let index = index; first as isFirst"
+                #accordionItem="cdkAccordionItem" class="example-accordion-item" role="button" tabindex="0"
+                [attr.id]="'accordion-header-' + index" [attr.aria-expanded]="accordionItem.expanded"
+                [attr.aria-controls]="'accordion-body-' + index">
+                <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+                  {{ item.title }}
+                  <span class="example-accordion-item-description" *ngIf="!accordionItem.expanded">
+                    <i class="fa fa-sort-down"></i>
+                  </span>
+                  <span class="example-accordion-item-description" *ngIf="accordionItem.expanded">
+                    <i class="fa fa-sort-up"></i>
+                  </span>
+                </div>
+                <div class="example-accordion-item-body" role="region"
+                  [style.display]="accordionItem.expanded ? '' : 'none'" [attr.id]="'accordion-body-' + index"
+                  [attr.aria-labelledby]="'accordion-header-' + index">
+                  {{item.body}}
+                </div>
+              </cdk-accordion-item>
+            </cdk-accordion>
+
+
+          </div> -->
+          <mat-accordion class="example-headers-align" *ngFor="let item of items; let i = index; first as isFirst">
+            <mat-expansion-panel [expanded]="step === i" (opened)="setStep(i)">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{ item.title }}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              {{item.body}}
+            </mat-expansion-panel>
+
+
+
+          </mat-accordion>
+
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="faq-img">
+            <img src="../../../assets/images/faq-bg.16ffd86a0c3bd466.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

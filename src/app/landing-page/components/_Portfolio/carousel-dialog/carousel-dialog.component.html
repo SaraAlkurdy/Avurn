@@ -1,0 +1,7 @@
+<div id="dialogSlider" class="owl-carousel owl-theme">
+  <ng-container *ngFor="let img of data.images; let i = index">
+    <div class="item popup" *ngFor="let item of img.images; ">
+      <img [src]="item.img">
+    </div>
+  </ng-container>
+</div>

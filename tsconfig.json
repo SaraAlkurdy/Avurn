@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "skipLibCheck": true,
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -14,6 +15,11 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    "paths": {
+      "jszib": [
+        "node_modules/jszip/dist/jszip.min.js"
+      ]
+    },
     "lib": [
       "es2018",
       "dom"

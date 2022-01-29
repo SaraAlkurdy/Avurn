@@ -1,0 +1,112 @@
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 20px 0.75rem;
+    z-index: 99;
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        &:focus {
+            box-shadow: none;
+        }
+        .navbar-toggler-icon {
+            border: 2px solid var(--white-color);
+            font-size: 30px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            mat-icon {
+                color: var(--white-color);
+                height: auto;
+            }
+        }
+    }
+    ul {
+        li {
+            padding-right: 5px;
+            padding-left: 5px;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            &.active {
+                a {
+                    color: var(--pink-color) !important;
+                    &::before {
+                        font-family: FontAwesome;
+                        content: "\f0c8";
+                        color: var(--pink-color);
+                        position: absolute;
+                        transform: rotate(45deg);
+                        font-size: 10px;
+                        left: 0;
+                        bottom: -10px;
+                        opacity: 0.8;
+                        right: 0;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+            a {
+                color: var(--white-color);
+                font-weight: 500;
+                position: relative;
+            }
+        }
+    }
+}
+.navbar-inverse {
+    background: var(--white-color);
+    box-shadow: 0 0 18px 1px #0000001a;
+    z-index: 999;
+    button {
+        span {
+            border: 2px solid var(--black-color) !important;
+            mat-icon {
+                color: var(--black-color) !important;
+            }
+        }
+    }
+    ul {
+        li {
+            &.active {
+                a {
+                    &::before {
+                        content: "";
+                    }
+                }
+            }
+            a {
+                color: var(--black-color);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        background: var(--white-color);
+        padding: 10px 20px;
+        margin-top: 10px;
+        li {
+            &:first-child {
+                padding-left: 5px !important;
+            }
+            &.active {
+                a {
+                    &::before {
+                        content: "" !important;
+                    }
+                }
+            }
+            a {
+                color: var(--black-color) !important;
+            }
+        }
+    }
+}

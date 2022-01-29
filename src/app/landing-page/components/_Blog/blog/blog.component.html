@@ -1,0 +1,36 @@
+<div id="blog">
+  <div class="container">
+    <div class="blog-header">
+      <h6>Info Update!</h6>
+      <h2>Our Latest <span>News</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
+
+    <div class="blog-slider">
+      <div id="blogSlider" class="owl-carousel owl-theme">
+        <div class="item" *ngFor="let item of blogImages;">
+          <div class="card" (click)="onBlogDetails(item)">
+            <div class="blog-img">
+              <img class="card-img-top" [src]="item.image" alt="Card image cap">
+            </div>
+            <div class="img-tag">
+              <a>{{item.tag}}</a>
+            </div>
+            <div class="card-body">
+              <span>{{item.date}}</span>
+              <h5 class="card-title"><a>{{item.title}}</a></h5>
+              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum printing typesetting.</p>
+              <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- <app-blog-details *ngIf="visiable" [item]="item"></app-blog-details> -->
+  <app-smart-website></app-smart-website>
+</div>

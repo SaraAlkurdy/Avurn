@@ -1,0 +1,102 @@
+<div class="sidebar">
+  <div class="search">
+    <form class="form-inline">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search here..." aria-label="Search here..."
+          aria-describedby="basic-addon1">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="categories">
+    <h3>Categories</h3>
+    <ul>
+      <li><a href="">AJAX</a></li>
+      <li><a href="">Apache</a></li>
+      <li><a href="">CSS</a></li>
+      <li><a href="">PHP</a></li>
+      <li><a href="">Django</a></li>
+      <li><a href="">Error</a></li>
+      <li><a href="">IIS</a></li>
+      <li><a href="">JavaScript</a></li>
+    </ul>
+  </div>
+
+  <div class="posts">
+    <h3>Recent Posts</h3>
+    <ul>
+      <li>
+        <div class="media">
+          <div class="post-img">
+            <img class="mr-3" src="../../../../assets/images/blog1.jpg" alt="">
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">
+              <a href="">The most popular new top business apps</a>
+            </h5>
+            <span>25 Feb, 2020</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="post-img">
+            <img class="mr-3" src="../../../../assets/images/blog2.jpg" alt="">
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">
+              <a href="">The best marketing top use management tools</a>
+            </h5>
+            <span>25 Feb, 2020</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="post-img">
+            <img class="mr-3" src="../../../../assets/images/blog3.jpg" alt="">
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">
+              <a href="">3 wooCommerce plugins to boost sales</a>
+            </h5>
+            <span>25 Feb, 2020</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="media">
+          <div class="post-img">
+            <img class="mr-3" src="../../../../assets/images/blog4.jpg" alt="">
+          </div>
+          <div class="media-body">
+            <h5 class="mt-0">
+              <a href="">Top 21 must-read blogs for creative agencies</a>
+            </h5>
+            <span>25 Feb, 2020</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="tags">
+    <h3>Tags</h3>
+    <div class="tags-content">
+      <a *ngFor="let tag of tags" href="">{{tag}}</a>
+      <a *ngFor="let tag of tags" href="">{{tag}}</a>
+    </div>
+  </div>
+
+  <div class="archives">
+    <h3>Archives</h3>
+    <ul>
+      <li><a href="">December 2018</a></li>
+      <li><a href="">January 2020</a></li>
+      <li><a href="">February 2020</a></li>
+      <li><a href="">March 2020</a></li>
+    </ul>
+  </div>
+</div>

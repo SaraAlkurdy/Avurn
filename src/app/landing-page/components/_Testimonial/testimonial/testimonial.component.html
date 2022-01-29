@@ -1,0 +1,32 @@
+<div id="testimonial">
+  <div class="container">
+    <div class="testimonial-header">
+      <h6>What people say about us</h6>
+      <h2>Our <span>Testimonial</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
+    <div class="testimonial-slider">
+      <div id="testimonial-slides" class="owl-carousel owl-theme">
+        <div class="item" *ngFor="let item of testimonialImages">
+          <div class="media">
+            <div class="testimonial-img">
+              <img class="align-self-start mr-3" [src]="item.image" alt="Testimonial Image">
+            </div>
+            <div class="media-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in fermentum.
+                Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere, mattis massa eget,
+                ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.</p>
+              <h3 class="mt-0">{{item.name}}</h3>
+              <span>{{item.position}}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <app-best-company></app-best-company>
+  <app-faq></app-faq>
+  <app-partners></app-partners>
+</div>

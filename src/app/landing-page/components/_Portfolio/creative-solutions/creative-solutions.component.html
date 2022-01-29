@@ -1,0 +1,40 @@
+<div id="creative-solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="creative-solutions-header">
+          <h6>Highly Creative Solutions</h6>
+          <h2>Why we are <span>Different</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="creative-solutions-content">
+          <mat-tab-group mat-align-tabs="center">
+            <mat-tab *ngFor="let item of creativeSolutionsTabs" [label]="item.title">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h5>{{item.title}}</h5>
+                  <p>{{item.text}}</p>
+                  <ul>
+                    <li><span>Creative Design</span></li>
+                    <li><span>Retina Ready</span></li>
+                    <li><span>Modern Design</span></li>
+                    <li><span>Digital Marketing & Branding</span></li>
+                    <li><span>Awesome Design</span></li>
+                    <li><span>We Are Professional</span></li>
+                    <li><span>We Are Creative</span></li>
+                    <li><span>We Are Unique</span></li>
+                  </ul>
+                  <button class="btn">our work</button>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <img [src]="item.image">
+                </div>
+              </div>
+            </mat-tab>
+          </mat-tab-group>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

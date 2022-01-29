@@ -1,0 +1,52 @@
+#start-project {
+    margin: 65px 0 0;
+    background-image: url(../../../../../assets/images/cta-bg.74ceb11dd1ada8dd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .start-project-bg {
+        background: rgba(54, 169, 225, 0.8);
+        padding: 70px 0;
+    }
+
+    .start-project-text {
+        h3 {
+            color: var(--white-color);
+            text-transform: capitalize;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--black-color) 10%);
+            }
+        }
+        p {
+            color: var(--white-color);
+            font-weight: 600;
+        }
+    }
+
+    .start-project-btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        button {
+            background: var(--white-color);
+            text-transform: capitalize;
+            font-weight: 500;
+            padding: 15px 30px;
+            &:hover {
+                background: var(--black-color);
+                color: var(--white-color);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .start-project-text {
+            text-align: center;
+        }
+        .start-project-btn {
+            justify-content: center;
+        }
+    }
+}

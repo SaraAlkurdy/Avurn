@@ -1,0 +1,23 @@
+<div id="partners">
+    <div class="container">
+        <div class="partners-header">
+            <h6>Trusted Client</h6>
+            <h2>Our Happy <span>Partners</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.</p>
+        </div>
+        <div class="partners-slider">
+            <div id="partners-slides" class="owl-carousel owl-theme">
+                <div class="item" *ngFor="let item of partnersImages">
+                    <div class="partner-img">
+                        <a>
+                            <img [src]="item">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

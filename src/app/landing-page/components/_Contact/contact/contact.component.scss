@@ -1,0 +1,146 @@
+#contact {
+    background: #f6f4f7;
+    padding: 75px 0;
+    .contact-header {
+        text-align: center;
+        margin-bottom: 50px;
+        h6 {
+            color: var(--pink-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            text-transform: capitalize;
+            font-weight: 400;
+            span {
+                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                font-weight: bold;
+            }
+        }
+        p {
+            color: #828893;
+            font-size: 17px;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .contact-body {
+        .contact-info,
+        .contact-form {
+            background: var(--white-color);
+            padding: 30px 20px;
+            border-top: 3px solid var(--pink-color);
+            border-bottom: 3px solid var(--pink-color);
+        }
+        .contact-info {
+            ul {
+                list-style: none;
+                li {
+                    margin-bottom: 19.99px;
+                    &:hover {
+                        .media {
+                            .media-left {
+                                i {
+                                    color: #f6f6f6;
+                                    background: var(--pink-color);
+                                    transition: 0.5s;
+                                }
+                            }
+                        }
+                    }
+                    .media {
+                        display: flex;
+                        align-items: center;
+
+                        .media-left {
+                            margin-right: 20px;
+                            i {
+                                color: var(--pink-color);
+                                background: #f6f6f6;
+                                width: 40px;
+                                height: 40px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 20px;
+                                border-radius: 50%;
+                            }
+                        }
+                        .media-body {
+                            color: #828893;
+                            font-weight: 500;
+                            span {
+                                display: block;
+                                font-size: 20px;
+                                font-weight: 500;
+                                color: var(--black-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            form {
+                .row > div {
+                    margin-bottom: 20px;
+                }
+                button {
+                    background: var(--pink-color);
+                    color: var(--white-color);
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    box-shadow: 0 8px 6px -6px #32333366;
+                    &:hover {
+                        background: var(--black-color);
+                        transition: 0.5s;
+                    }
+                }
+                ::-webkit-input-placeholder {
+                    color: #828893;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                :-moz-placeholder {
+                    /* Firefox 18- */
+                    color: #828893;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                ::-moz-placeholder {
+                    /* Firefox 19+ */
+                    color: #828893;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                :-ms-input-placeholder {
+                    color: #828893;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .contact-header {
+            p {
+                width: 100%;
+                font-size: 15px;
+            }
+        }
+        .contact-body {
+            .contact-form {
+                margin-top: 30px;
+            }
+        }
+    }
+}

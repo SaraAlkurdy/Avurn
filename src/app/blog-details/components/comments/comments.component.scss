@@ -1,0 +1,112 @@
+.comments {
+    h3 {
+        color: var(--black-color);
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+    .comment-content {
+        background: #f5f7fb;
+        padding: 20px;
+        margin-bottom: 15px;
+        .media {
+            display: flex;
+            align-items: center;
+            .comment-img {
+                width: 80px;
+                height: 80px;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                }
+            }
+            .media-content {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .media-body {
+                    padding-left: 20px;
+                    h5 {
+                        font-size: 16px;
+                    }
+                    span {
+                        color: #828893;
+                        font-size: 14px;
+                    }
+                }
+                .reply {
+                    button {
+                        background: var(--black-color);
+                        color: var(--white-color);
+                        &:hover {
+                            background: var(--pink-color);
+                        }
+                    }
+                }
+            }
+        }
+        p {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #828893;
+        }
+    }
+}
+
+.comment-reply {
+    h3 {
+        color: var(--black-color);
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    form {
+        p {
+            &:first-child {
+                color: #828893;
+                font-size: 15px;
+            }
+        }
+
+        input,
+        textarea {
+            padding: 15px;
+        }
+
+        button {
+            background: var(--pink-color);
+            color: var(--white-color);
+            text-transform: uppercase;
+            padding: 10px 25px;
+            font-weight: 500;
+            margin-top: 5px;
+            &:hover {
+                background: var(--black-color);
+                transition: 0.5s;
+            }
+        }
+
+        ::-webkit-input-placeholder {
+            color: #828893;
+            font-size: 14px;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: #828893;
+            font-size: 14px;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #828893;
+            font-size: 14px;
+        }
+
+        :-ms-input-placeholder {
+            color: #828893;
+            font-size: 14px;
+        }
+    }
+}
