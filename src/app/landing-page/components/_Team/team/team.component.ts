@@ -42,6 +42,7 @@ export class TeamComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function () {
       $('#teamSlider').owlCarousel({
+        autoplayHoverPause: true,
         loop: true,
         items: 3,
         autoplay: true,

@@ -48,6 +48,7 @@ export class BlogComponent implements OnInit {
       $('#blogSlider').owlCarousel({
         loop: true,
         items: 3,
+        autoplayHoverPause: true,
         autoplay: true,
         margin: 30,
         width: 352,

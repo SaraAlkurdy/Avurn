@@ -39,6 +39,7 @@ export class TestimonialComponent implements OnInit {
 
     $(document).ready(function () {
       $('#testimonial-slides').owlCarousel({
+        autoplayHoverPause: true,
         loop: true,
         items: 2,
         autoplay: true,

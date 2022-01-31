@@ -25,7 +25,8 @@ export class PartnersComponent implements OnInit {
       $('#partners-slides').owlCarousel({
         loop: true,
         items: 5,
-        // autoplay: true,
+        autoplay: true,
+        autoplayHoverPause: true,
         margin: 30,
         width: 352,
         autoWidth: false,
