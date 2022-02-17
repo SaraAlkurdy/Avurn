@@ -18,7 +18,7 @@
         flex-direction: column;
         justify-content: center;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             font-weight: 700;
             font-size: 0.85rem;
             letter-spacing: 1px;
@@ -28,7 +28,7 @@
             font-weight: 400;
             span {
                 font-weight: bold;
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
             }
         }
         p {
@@ -44,7 +44,7 @@
                 &::before {
                     font-family: FontAwesome;
                     content: "\f0c8";
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     position: absolute;
                     transform: rotate(45deg);
                     font-size: 10px;

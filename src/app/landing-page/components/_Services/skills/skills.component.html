@@ -1,4 +1,4 @@
-<div id="skills" data-aos="fade-up">
+<div id="skills">
   <div class="row">
     <div class="col-sm-12 col-md-6 p-0">
       <div class="skills-content">
@@ -9,24 +9,40 @@
             dolore magna aliqua.</p>
           <div class="progress-bar-header">
             <h3>Branding</h3>
-            <span>{{progress1}}%</span>
+            <span>{{progress1 / 100 |percent}}</span>
           </div>
+          <!-- <div class="meter">
+            <span style="width:95%;"><span class="progress" [@foobar]="state"></span></span>
+          </div> -->
           <mat-progress-bar mode="determinate" [value]="progress1"></mat-progress-bar>
+
           <div class="progress-bar-header">
             <h3>Marketing</h3>
-            <span>{{progress2}}%</span>
+            <span>{{progress2 / 100 |percent}}</span>
           </div>
+          <!-- <div class="meter">
+            <span style="width:90%;"><span class="progress" [@foobar]="state"></span></span>
+          </div> -->
           <mat-progress-bar mode="determinate" [value]="progress2"></mat-progress-bar>
+
           <div class="progress-bar-header">
             <h3>Design</h3>
-            <span>{{progress1}}%</span>
+            <span>{{progress1 / 100 |percent}}</span>
           </div>
+          <!-- <div class="meter">
+            <span style="width:95%;"><span class="progress" [@foobar]="state"></span></span>
+          </div> -->
           <mat-progress-bar mode="determinate" [value]="progress1"></mat-progress-bar>
+
           <div class="progress-bar-header">
             <h3>Development</h3>
-            <span>{{progress3}}%</span>
+            <span>{{progress3 / 100 |percent}}</span>
           </div>
+          <!-- <div class="meter">
+            <span style="width:93%;"><span class="progress" [@foobar]="state"></span></span>
+          </div> -->
           <mat-progress-bar mode="determinate" [value]="progress3"></mat-progress-bar>
+
         </div>
       </div>
     </div>

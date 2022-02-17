@@ -9,7 +9,7 @@
     .creative-solutions-header {
         text-align: center;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.85rem;
@@ -19,7 +19,7 @@
             text-transform: capitalize;
             font-weight: 400;
             span {
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
                 font-weight: bold;
             }
         }
@@ -52,7 +52,7 @@
                 &::before {
                     font-family: FontAwesome;
                     content: "\f0c8";
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     position: absolute;
                     transform: rotate(45deg);
                     font-size: 10px;
@@ -67,7 +67,7 @@
             }
         }
         button {
-            background: var(--pink-color);
+            background: var(--blue-color);
             color: var(--white-color);
             border: none;
             text-transform: capitalize;
@@ -102,7 +102,7 @@
         }
         .mat-tab-label-active {
             .mat-tab-label-content {
-                background: var(--pink-color);
+                background: var(--blue-color);
                 color: var(--white-color);
             }
             &::before {
@@ -124,7 +124,7 @@
                 content: none;
             }
             &:hover {
-                background: var(--pink-color);
+                background: var(--blue-color);
                 color: var(--white-color);
                 transition: 0.5s;
             }

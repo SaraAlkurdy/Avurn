@@ -5,7 +5,7 @@
         text-align: center;
         margin-bottom: 50px;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.85rem;
@@ -15,7 +15,7 @@
             text-transform: capitalize;
             font-weight: 400;
             span {
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
                 font-weight: bold;
             }
         }
@@ -58,7 +58,7 @@
                 }
                 span {
                     font-size: 15px;
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     margin-bottom: 10px;
                 }
             }
@@ -71,7 +71,7 @@
         }
         .owl-theme .owl-dots .owl-dot.active span,
         .owl-theme .owl-dots .owl-dot:hover span {
-            background: var(--pink-color);
+            background: var(--blue-color);
         }
 
         .owl-theme .owl-dots .owl-dot span {

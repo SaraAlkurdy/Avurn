@@ -83,9 +83,9 @@ export class PortfolioComponent implements OnInit {
 
     })
 
-    console.log(this.itemsAll);
-    console.log(this.itemsDesign);
-    console.log(this.seo);
+    // console.log(this.itemsAll);
+    // console.log(this.itemsDesign);
+    // console.log(this.seo);
 
 
     // Load items into the lightbox gallery ref

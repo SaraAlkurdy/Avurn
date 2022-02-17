@@ -40,7 +40,7 @@
                         background: var(--black-color);
                         color: var(--white-color);
                         &:hover {
-                            background: var(--pink-color);
+                            background: var(--blue-color);
                         }
                     }
                 }
@@ -75,7 +75,7 @@
         }
 
         button {
-            background: var(--pink-color);
+            background: var(--blue-color);
             color: var(--white-color);
             text-transform: uppercase;
             padding: 10px 25px;

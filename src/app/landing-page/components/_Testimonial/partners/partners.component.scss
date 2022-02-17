@@ -5,7 +5,7 @@
         text-align: center;
         margin-bottom: 50px;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.85rem;
@@ -15,7 +15,7 @@
             text-transform: capitalize;
             font-weight: 400;
             span {
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
                 font-weight: bold;
             }
         }
@@ -37,10 +37,10 @@
 
             &:hover {
                 .partner-img {
-                    // background: linear-gradient(to right, var(--pink-color) 3px, transparent 3px) 0 0,
-                    //     linear-gradient(to left, var(--pink-color) 3px, transparent 3px) 100% 100%,
-                    //     linear-gradient(to bottom, var(--pink-color) 3px, transparent 3px) 0 0,
-                    //     linear-gradient(to top, var(--pink-color) 3px, transparent 3px) 100% 100%;
+                    // background: linear-gradient(to right, var(--blue-color) 3px, transparent 3px) 0 0,
+                    //     linear-gradient(to left, var(--blue-color) 3px, transparent 3px) 100% 100%,
+                    //     linear-gradient(to bottom, var(--blue-color) 3px, transparent 3px) 0 0,
+                    //     linear-gradient(to top, var(--blue-color) 3px, transparent 3px) 100% 100%;
                     // background-repeat: no-repeat;
                     // background-size: 40px 40px;
                     &:hover {
@@ -64,14 +64,14 @@
                         transition: 0.5s;
                     }
                     &::before {
-                        border-left: 3px solid var(--pink-color);
-                        border-top: 3px solid var(--pink-color);
+                        border-left: 3px solid var(--blue-color);
+                        border-top: 3px solid var(--blue-color);
                         left: 0;
                         top: 0;
                     }
                     &::after {
-                        border-right: 3px solid var(--pink-color);
-                        border-bottom: 3px solid var(--pink-color);
+                        border-right: 3px solid var(--blue-color);
+                        border-bottom: 3px solid var(--blue-color);
                         right: 0;
                         bottom: 0;
                     }

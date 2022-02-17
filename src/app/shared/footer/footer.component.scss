@@ -10,7 +10,7 @@
                 color: var(--white-color);
                 font-weight: 700;
                 &:hover {
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     transition: 0.5s;
                 }
             }
@@ -38,7 +38,7 @@
                     transform: translateY(-5px);
                     i {
                         color: var(--white-color);
-                        background: var(--pink-color);
+                        background: var(--blue-color);
                     }
                 }
                 i {

@@ -32,3 +32,8 @@ gallery {
 lightbox {
     box-shadow: none !important;
 }
+.mat-progress-bar .mat-progress-bar-buffer {
+    background: var(--blue-color);
+    border-top: 3px solid var(--black-color);
+    border-bottom: 3px solid var(--black-color);
+}

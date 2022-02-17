@@ -1,7 +1,7 @@
 #skills {
     overflow: hidden;
     .skills-content {
-        background: var(--pink-color);
+        background: var(--blue-color);
         padding: 65px;
         text-align: left;
         color: var(--white-color);
@@ -26,6 +26,7 @@
         .mat-progress-bar {
             height: 6px;
             margin-bottom: 20px;
+            border-radius: 0.25rem;
         }
         .progress-bar-header {
             display: flex;
@@ -67,4 +68,46 @@
     .mat-progress-bar-fill::after {
         background-color: var(--white-color);
     }
+}
+
+.meter { 
+    height: 6px;
+    position: relative;
+    background: var(--black-color);
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 0.25rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+}
+
+.progress {
+    background-color: var(--white-color);
+    animation: progressBar 3s ease-in-out;
+    -webkit-animation: progressBar 3s ease-in-out;
+    animation-fill-mode:both; 
+    -webkit-animation-fill-mode:both; 
+    -moz-animation: progressBar 3s ease-in-out;
+    -moz-animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@-moz-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
 }

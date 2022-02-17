@@ -6,7 +6,7 @@
     .portfolio-header {
         text-align: center;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.85rem;
@@ -16,7 +16,7 @@
             text-transform: capitalize;
             font-weight: 400;
             span {
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
                 font-weight: bold;
             }
         }
@@ -54,7 +54,7 @@
                 }
             }
             .img-overlay {
-                background: var(--pink-color);
+                background: var(--blue-color);
                 position: absolute;
                 top: 0;
                 bottom: 25px;
@@ -82,7 +82,7 @@
             }
             .mat-tab-label-active {
                 .mat-tab-label-content {
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                 }
                 &::before {
                     content: "\\";

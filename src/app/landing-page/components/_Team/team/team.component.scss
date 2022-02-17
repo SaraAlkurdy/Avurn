@@ -5,7 +5,7 @@
     .team-header {
         margin-bottom: 65px;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.85rem;
@@ -15,7 +15,7 @@
             text-transform: capitalize;
             font-weight: 400;
             span {
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
                 font-weight: bold;
             }
         }
@@ -64,7 +64,7 @@
                 }
                 span {
                     font-size: 15px;
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     margin-bottom: 10px;
                 }
                 .social-media {
@@ -80,7 +80,7 @@
                             &:hover {
                                 i {
                                     color: var(--white-color);
-                                    background: var(--pink-color);
+                                    background: var(--blue-color);
                                 }
                             }
                             i {
@@ -161,14 +161,14 @@
                     left: -49px;
                     transform: translateY(-50%);
                     &:hover {
-                        background: var(--pink-color) !important;
+                        background: var(--blue-color) !important;
                         transition: 0.5s;
                     }
                 }
                 .owl-next {
                     right: -49px;
                     &:hover {
-                        background: var(--pink-color) !important;
+                        background: var(--blue-color) !important;
                         transition: 0.5s;
                     }
                 }

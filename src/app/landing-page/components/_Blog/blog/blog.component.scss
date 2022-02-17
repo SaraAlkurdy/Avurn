@@ -4,7 +4,7 @@
         text-align: center;
         margin-bottom: 50px;
         h6 {
-            color: var(--pink-color);
+            color: var(--blue-color);
             text-transform: uppercase;
             font-weight: 700;
             font-size: 0.85rem;
@@ -14,7 +14,7 @@
             text-transform: capitalize;
             font-weight: 400;
             span {
-                background: linear-gradient(to bottom, transparent 80%, var(--pink-color) 10%);
+                background: linear-gradient(to bottom, transparent 80%, var(--blue-color) 10%);
                 font-weight: bold;
             }
         }
@@ -56,14 +56,14 @@
                 position: absolute;
                 top: 40px;
                 a {
-                    background: var(--pink-color);
+                    background: var(--blue-color);
                     color: var(--white-color);
                     padding: 10px 30px;
                 }
             }
             .card-body {
                 span {
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     font-size: 14px;
                 }
                 h5 {
@@ -77,7 +77,7 @@
                     color: #828893;
                 }
                 a {
-                    color: var(--pink-color);
+                    color: var(--blue-color);
                     text-decoration: none;
                 }
             }
@@ -86,7 +86,7 @@
         ::ng-deep {
             .owl-theme .owl-dots .owl-dot.active span,
             .owl-theme .owl-dots .owl-dot:hover span {
-                background: var(--pink-color);
+                background: var(--blue-color);
             }
             .owl-theme .owl-dots .owl-dot span {
                 width: 15px;

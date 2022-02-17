@@ -36,11 +36,11 @@
             }
             &.active {
                 a {
-                    color: var(--pink-color) !important;
+                    color: var(--blue-color) !important;
                     &::before {
                         font-family: FontAwesome;
                         content: "\f0c8";
-                        color: var(--pink-color);
+                        color: var(--blue-color);
                         position: absolute;
                         transform: rotate(45deg);
                         font-size: 10px;
